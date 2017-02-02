@@ -1,3 +1,5 @@
+console.log(window.location.pathname)
+
 function swipe(direction){
     var endpoint = window.location.href.split('/')[7];
     var forward, backward;

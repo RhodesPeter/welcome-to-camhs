@@ -4,8 +4,7 @@ function swipe(direction){
     
     // Homepage to choose an avatar page
     if (window.location.href === "https://rhodespeter.github.io/welcome-to-camhs/"){
-          forward = 'http://bbc.co.uk',
-          backward = ''
+          window.location.href = 'http://bbc.co.uk'
     };
 
     // Avatar to introduction page

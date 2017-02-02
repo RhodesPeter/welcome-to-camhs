@@ -1,17 +1,17 @@
 function swipe(direction){
-    var endpoint = window.location.href.split('/')[3];
+    var endpoint = window.location.href.split('/')[4];
     var forward, backward;
     
-    // Homepage to choose an avatar page
-    if (window.location.href.split('/')[4] === undefined){
-          forward = 'choose-an-avatar/',
-          backward = ''
-    };
+//     // Homepage to choose an avatar page
+//     if (window.location.href.split('/')[4] === undefined){
+//           forward = 'choose-an-avatar/',
+//           backward = ''
+//     };
 
     // Avatar to introduction page
-    if (endpoint === 'choose-an-avatar.html'){
-        forward = 'introduction.html',
-        backward = 'index.html'
+    if (endpoint === 'choose-an-avatar/'){
+        forward = 'introduction',
+        backward = 'index'
     };
 
     // Introduction to feelings page

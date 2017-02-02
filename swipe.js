@@ -3,8 +3,8 @@ function swipe(direction){
     var forward, backward;
     
     // Homepage to choose an avatar page
-    if (window.location.href.split('/')[4] === undefined){
-          forward = 'choose-an-avatar',
+    if (window.location.href === "https://rhodespeter.github.io/welcome-to-camhs/"){
+          forward = 'http://bbc.co.uk',
           backward = ''
     };
 

@@ -1,19 +1,17 @@
-console.log(window.location);
-console.log(window.location.href.split('/')[4]);
-
 function swipe(direction){
-    var endpoint = window.location.href.split('/')[4];
+    var endpoint = window.location.href.split('/')[7];
     var forward, backward;
-    
+
     // Homepage to choose an avatar page
-    if (window.location === "https://rhodespeter.github.io/welcome-to-camhs/"){
-          window.location = 'http://bbc.co.uk'
+    if (endpoint === 'index.html'){
+          forward = 'choose-an-avatar.html',
+          backward = ''
     };
 
     // Avatar to introduction page
-    if (endpoint === 'choose-an-avatar/'){
-        forward = 'introduction',
-        backward = 'index'
+    if (endpoint === 'choose-an-avatar.html'){
+        forward = 'introduction.html',
+        backward = 'index.html'
     };
 
     // Introduction to feelings page

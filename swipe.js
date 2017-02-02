@@ -3,8 +3,8 @@ function swipe(direction){
     var forward, backward;
     
     // Homepage to choose an avatar page
-    if (window.location.href === "https://rhodespeter.github.io/welcome-to-camhs/"){
-          window.location.href = 'http://bbc.co.uk'
+    if (window.location === "https://rhodespeter.github.io/welcome-to-camhs/"){
+          window.location = 'http://bbc.co.uk'
     };
 
     // Avatar to introduction page

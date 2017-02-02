@@ -3,7 +3,7 @@ function swipe(direction){
     var forward, backward;
 
     // Homepage to choose an avatar page
-    if (endpoint === 'welcome-to-camhs/'){
+    if (endpoint === ''){
           forward = 'choose-an-avatar/',
           backward = ''
     };

@@ -1,14 +1,14 @@
-console.log(window.location.href.split('/')[3]);
+console.log(window.location.href);
 
 function swipe(direction){
     var endpoint = window.location.href.split('/')[4];
     var forward, backward;
     
-//     // Homepage to choose an avatar page
-//     if (window.location.href.split('/')[4] === undefined){
-//           forward = 'choose-an-avatar/',
-//           backward = ''
-//     };
+    // Homepage to choose an avatar page
+    if (window.location.href.split('/')[4] === undefined){
+          forward = 'choose-an-avatar/',
+          backward = ''
+    };
 
     // Avatar to introduction page
     if (endpoint === 'choose-an-avatar/'){

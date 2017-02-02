@@ -1,49 +1,47 @@
-console.log(window.location.pathname)
-
 function swipe(direction){
     var endpoint = window.location.href;
     var forward, backward;
 
     // Homepage to choose an avatar page
     if (endpoint === "https://rhodespeter.github.io/welcome-to-camhs/"){
-          forward = "https://rhodespeter.github.io/welcome-to-camhs/introduction",
-          backward = ''
+          forward = "https://rhodespeter.github.io/welcome-to-camhs/choose-an-avatar/",
+          backward = "https://rhodespeter.github.io/welcome-to-camhs/"
     };
 
     // Avatar to introduction page
-    if (endpoint === 'choose-an-avatar.html'){
-        forward = 'introduction.html',
-        backward = 'index.html'
+    if (endpoint === 'https://rhodespeter.github.io/welcome-to-camhs/choose-an-avatar/'){
+        forward = 'https://rhodespeter.github.io/welcome-to-camhs/introduction/',
+        backward = 'https://rhodespeter.github.io/welcome-to-camhs/'
     };
 
     // Introduction to feelings page
-    if (endpoint === 'introduction.html'){
-        forward = 'eating.html',
-        backward = 'choose-an-avatar.html'
+    if (endpoint === 'https://rhodespeter.github.io/welcome-to-camhs/introduction/'){
+        forward = 'https://rhodespeter.github.io/welcome-to-camhs/eating/',
+        backward = "https://rhodespeter.github.io/welcome-to-camhs/choose-an-avatar/
     };
 
     // Eating page to finish page
-    if (endpoint === 'eating.html'){
-        forward = 'feelings.html',
-        backward = 'introduction.html'
+    if (endpoint === 'https://rhodespeter.github.io/welcome-to-camhs/eating/'){
+        forward = 'https://rhodespeter.github.io/welcome-to-camhs/feelings/',
+        backward = 'https://rhodespeter.github.io/welcome-to-camhs/introduction/'
     };
 
     // Feelings page to eating page
-    if (endpoint === 'feelings.html'){
-        forward = 'personality.html',
-        backward = 'eating.html'
+    if (endpoint === 'https://rhodespeter.github.io/welcome-to-camhs/feelings/'){
+        forward = 'https://rhodespeter.github.io/welcome-to-camhs/personality/',
+        backward = 'https://rhodespeter.github.io/welcome-to-camhs/eating/'
     };
 
     // Eating page to finish page
-    if (endpoint === 'personality.html'){
-        forward = 'finished.html',
-        backward = 'feelings.html'
+    if (endpoint === 'https://rhodespeter.github.io/welcome-to-camhs/personality/'){
+        forward = 'https://rhodespeter.github.io/welcome-to-camhs/finished/',
+        backward = 'https://rhodespeter.github.io/welcome-to-camhs/feelings/'
     };
 
     // Eating page to finish page
-    if (endpoint === 'finished.html'){
-        forward = '',
-        backward = 'personality.html'
+    if (endpoint === 'https://rhodespeter.github.io/welcome-to-camhs/finished/'){
+        forward = 'https://rhodespeter.github.io/welcome-to-camhs/finished/',
+        backward = 'https://rhodespeter.github.io/welcome-to-camhs/personality/'
     };
 
     if(direction === "swipeleft" && event.target.tagName !== 'IMG'){

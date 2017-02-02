@@ -1,10 +1,10 @@
 function swipe(direction){
-    var endpoint = window.location.href.split('/')[7];
+    var endpoint = window.location.href.split('/')[3];
     var forward, backward;
 
     // Homepage to choose an avatar page
-    if (endpoint === 'index.html'){
-          forward = 'choose-an-avatar.html',
+    if (endpoint === 'welcome-to-camhs/'){
+          forward = 'choose-an-avatar/',
           backward = ''
     };
 

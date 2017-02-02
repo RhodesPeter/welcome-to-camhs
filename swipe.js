@@ -1,3 +1,5 @@
+console.log('hi');
+
 function swipe(direction){
     var endpoint = window.location.href;
     var forward, backward;
@@ -17,7 +19,7 @@ function swipe(direction){
     // Introduction to feelings page
     if (endpoint === 'https://rhodespeter.github.io/welcome-to-camhs/introduction/'){
         forward = 'https://rhodespeter.github.io/welcome-to-camhs/eating/',
-        backward = "https://rhodespeter.github.io/welcome-to-camhs/choose-an-avatar/
+        backward = 'https://rhodespeter.github.io/welcome-to-camhs/choose-an-avatar/'
     };
 
     // Eating page to finish page

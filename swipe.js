@@ -1,4 +1,5 @@
-console.log("hi");
+console.log(window.location);
+console.log(window.location.href.split('/')[4]);
 
 function swipe(direction){
     var endpoint = window.location.href.split('/')[4];

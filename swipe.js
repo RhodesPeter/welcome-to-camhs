@@ -1,7 +1,7 @@
 function swipe(direction){
     var endpoint = window.location.href.split('/')[3];
     var forward, backward;
-
+console.log(window.location.href)
     // Homepage to choose an avatar page
     if (endpoint === ''){
           forward = 'choose-an-avatar/',

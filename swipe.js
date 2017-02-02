@@ -1,12 +1,12 @@
 console.log(window.location.pathname)
 
 function swipe(direction){
-    var endpoint = window.location.href.split('/')[7];
+    var endpoint = window.location.href;
     var forward, backward;
 
     // Homepage to choose an avatar page
-    if (endpoint === 'index.html'){
-          forward = 'choose-an-avatar.html',
+    if (endpoint === "https://rhodespeter.github.io/welcome-to-camhs/"){
+          forward = "https://rhodespeter.github.io/welcome-to-camhs/introduction",
           backward = ''
     };
 
